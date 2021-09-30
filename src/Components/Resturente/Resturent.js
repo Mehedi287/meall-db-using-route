@@ -20,10 +20,10 @@ const Resturent = () => {
 
     return (
         <div>
-            <input onChange={handleSerchMeal} placeholder="serch Your favourite food " type="text" name="" id="" />
-            <Row xs={1} md={3} className="g-4">
+            <input onChange={handleSerchMeal} placeholder="serch Your favourite food " type="text" className="w-75" name="" id="" />
+            <Row xs={1} md={3} className="g-4 mt-4">
                 {
-                    meals.map(meal => <Meal meal={meal}></Meal>)
+                    meals.map(meal => <Meal meal={meal} key={meal.idMeal}></Meal>)
                 }
             </Row>
 

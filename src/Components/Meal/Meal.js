@@ -9,12 +9,13 @@ const Meal = (props) => {
         <>
             <Col>
                 <Card>
-                    <Card.Img variant="top" src={strMealThumb} />
+                    <Card.Img variant="top" pill src={strMealThumb} />
                     <Card.Body>
                         <Card.Title> {strMeal}</Card.Title>
                         <Card.Text>
                             {strInstructions}
                         </Card.Text>
+                        <button>show Details</button>
                     </Card.Body>
                 </Card>
             </Col>
