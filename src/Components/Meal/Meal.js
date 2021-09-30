@@ -8,14 +8,14 @@ const Meal = (props) => {
 
         <>
             <Col>
-                <Card>
-                    <Card.Img variant="top" pill src={strMealThumb} />
+                <Card className="rounded">
+                    <Card.Img variant="top" className="rounded" src={strMealThumb} />
                     <Card.Body>
                         <Card.Title> {strMeal}</Card.Title>
                         <Card.Text>
                             {strInstructions}
                         </Card.Text>
-                        <button>show Details</button>
+                        <button to="/details">show Details</button>
                     </Card.Body>
                 </Card>
             </Col>
