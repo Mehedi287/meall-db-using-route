@@ -1,12 +1,14 @@
 import React from 'react';
-import { Card, Col, Row } from 'react-bootstrap';
+import { Card, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Meal = (props) => {
-    const { strMeal, strMealThumb, strTags, strInstructions } = props.meal
+    const { strMeal, strMealThumb, strInstructions } = props.meal
     console.log(props.meal);
     return (
 
         <>
+
             <Col>
                 <Card className="rounded">
                     <Card.Img variant="top" className="rounded" src={strMealThumb} />
