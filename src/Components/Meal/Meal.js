@@ -1,10 +1,15 @@
 import React from 'react';
 import { Card, Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const Meal = (props) => {
-    const { strMeal, strMealThumb, strInstructions } = props.meal
-    console.log(props.meal);
+    const { strMeal, strMealThumb, strInstructions, idMeal } = props.meal
+
+    const url = `/details/${idMeal}`
+    const history = useHistory();
+    const handleDetails = () => {
+        history.push(url)
+    }
     return (
 
         <>
@@ -17,7 +22,7 @@ const Meal = (props) => {
                         <Card.Text>
                             {strInstructions}
                         </Card.Text>
-                        <button to="/details">show Details</button>
+                        <button onClick={handleDetails}>show Details</button>
                     </Card.Body>
                 </Card>
             </Col>

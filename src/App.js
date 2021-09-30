@@ -20,7 +20,7 @@ function App() {
           <Route path="/home">
             <Header></Header>
           </Route>
-          <Route path="/details">
+          <Route path="/details/:id">
             <MealDetail></MealDetail>
           </Route>
         </Switch>

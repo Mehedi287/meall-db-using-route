@@ -37,7 +37,7 @@ const Resturent = () => {
 
                         <Link className="link" to="/home"><Nav.Link className="text-white " ></Nav.Link>Home</Link>
                         <Link className="link" to="/resturent"><Nav.Link className="text-white " ></Nav.Link>Meals</Link>
-                        <Link className="link" to="/details"> <Nav.Link className="text-white " ></Nav.Link>Meal Details</Link>
+                        <Link className="link" to="/details/45"> <Nav.Link className="text-white " ></Nav.Link>Meal Details</Link>
 
                     </Nav>
 
